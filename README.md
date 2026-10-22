@@ -4,6 +4,10 @@ PCC 2026 concept and reproducible message-review demonstrator. The proposed AI a
 
 NUMS: Lubna Khalid, Javeria Naseer and Arooba Jamil. NUST: Maheen Athar. Role assignments, qualifications and mentor details need confirmation.
 
+## Complete project download
+
+[Download the complete final ZIP](https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/raw/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip). Includes the final pitch, filled template, runnable rule prototype, video, source and supporting documents. Public reviewers can download it without signing in.
+
 ## Reviewer materials
 
 - [Recorded working demonstration](Demo/cognitive-firewall-walkthrough.mp4)
