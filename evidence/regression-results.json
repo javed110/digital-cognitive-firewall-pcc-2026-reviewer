@@ -1,0 +1,719 @@
+{
+  "run_at": "2026-10-22T08:16:07.157Z",
+  "kind": "Synthetic policy and boundary regression checks",
+  "passed": 28,
+  "total": 28,
+  "limits": "Author-defined expectations. No blinded evaluation, detection accuracy, human benefit or trained model performance is measured.",
+  "rows": [
+    {
+      "id": "P01",
+      "purpose": "account pressure and different link host",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "URGENT"
+          },
+          {
+            "id": "threat",
+            "label": "Threat or loss",
+            "excerpt": "account will be blocked"
+          },
+          {
+            "id": "authority",
+            "label": "Claimed authority",
+            "excerpt": "bank"
+          },
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "OTP"
+          }
+        ],
+        "technical": [
+          {
+            "id": "domain_mismatch",
+            "detail": "Link host differs from the expected domain: account-verify.example.net"
+          }
+        ],
+        "urls": [
+          {
+            "text": "https://account-verify.example.net/login",
+            "host": "account-verify.example.net"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P02",
+      "purpose": "payment without URL",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "payment",
+            "label": "Payment request",
+            "excerpt": "Send money"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P03",
+      "purpose": "claimed authority alone",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Review the context",
+        "cues": [
+          {
+            "id": "authority",
+            "label": "Claimed authority",
+            "excerpt": "registrar"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "These phrases can also appear in legitimate messages. Check who sent the request and why.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P04",
+      "purpose": "routine message",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "No listed cues found",
+        "cues": [],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "The rules did not match. This does not establish that a message or link is safe.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P05",
+      "purpose": "benign urgent notice may still flag",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Review the context",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "Urgent"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "These phrases can also appear in legitimate messages. Check who sent the request and why.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P06",
+      "purpose": "negated secret advice can still flag",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "password"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P07",
+      "purpose": "Urdu threat and secret",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "فوری"
+          },
+          {
+            "id": "threat",
+            "label": "Threat or loss",
+            "excerpt": "بند"
+          },
+          {
+            "id": "authority",
+            "label": "Claimed authority",
+            "excerpt": "بینک"
+          },
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "کوڈ"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P08",
+      "purpose": "Roman Urdu pressure",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "Foran"
+          },
+          {
+            "id": "threat",
+            "label": "Threat or loss",
+            "excerpt": "band ho"
+          },
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "OTP"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P09",
+      "purpose": "domain suffix trick",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "domain_mismatch",
+            "detail": "Link host differs from the expected domain: example.org.evil.example.net"
+          }
+        ],
+        "urls": [
+          {
+            "text": "https://example.org.evil.example.net/",
+            "host": "example.org.evil.example.net"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P10",
+      "purpose": "userinfo trick",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "domain_mismatch",
+            "detail": "Link host differs from the expected domain: evil.example.net"
+          },
+          {
+            "id": "userinfo",
+            "detail": "Link contains text before @ that can disguise its destination."
+          }
+        ],
+        "urls": [
+          {
+            "text": "https://example.org@evil.example.net/",
+            "host": "evil.example.net"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P11",
+      "purpose": "valid subdomain is not authentication",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "No listed cues found",
+        "cues": [],
+        "technical": [],
+        "urls": [
+          {
+            "text": "https://library.example.org/notice",
+            "host": "library.example.org"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "The rules did not match. This does not establish that a message or link is safe.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P12",
+      "purpose": "matching host and trailing dot",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "No listed cues found",
+        "cues": [],
+        "technical": [],
+        "urls": [
+          {
+            "text": "https://example.org./",
+            "host": "example.org."
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "The rules did not match. This does not establish that a message or link is safe.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P13",
+      "purpose": "IP-address link",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "ip",
+            "detail": "Link uses an IP address instead of a domain."
+          }
+        ],
+        "urls": [
+          {
+            "text": "https://192.0.2.1/",
+            "host": "192.0.2.1"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P14",
+      "purpose": "HTTP observation",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "http",
+            "detail": "Link uses unencrypted HTTP."
+          }
+        ],
+        "urls": [
+          {
+            "text": "http://example.org/",
+            "host": "example.org"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P15",
+      "purpose": "punycode host review",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "idn",
+            "detail": "Internationalized domain needs manual review: xn--exmple-cua.org"
+          }
+        ],
+        "urls": [
+          {
+            "text": "https://xn--exmple-cua.org/",
+            "host": "xn--exmple-cua.org"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P16",
+      "purpose": "stated sender mismatch",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "sender_mismatch",
+            "detail": "Stated sender domain differs from the expected domain."
+          }
+        ],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P17",
+      "purpose": "sender display name is not verified",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "sender_format",
+            "detail": "Sender field is not a simple email address. No sender authentication is available."
+          }
+        ],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P18",
+      "purpose": "instruction text cannot override rules",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "immediately"
+          },
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "password"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P19",
+      "purpose": "zero-width insertion",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "password"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P20",
+      "purpose": "Unicode compatibility characters",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "PASSWORD"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P21",
+      "purpose": "quoted scam still flags",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [
+          {
+            "id": "urgency",
+            "label": "Time pressure",
+            "excerpt": "immediately"
+          },
+          {
+            "id": "secret",
+            "label": "Sensitive information request",
+            "excerpt": "OTP"
+          }
+        ],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P22",
+      "purpose": "semantic evasion remains a limitation",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "No listed cues found",
+        "cues": [],
+        "technical": [],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "The rules did not match. This does not establish that a message or link is safe.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P23",
+      "purpose": "no reference domain means no host identity check",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "No listed cues found",
+        "cues": [],
+        "technical": [],
+        "urls": [
+          {
+            "text": "https://unknown.example.net/",
+            "host": "unknown.example.net"
+          }
+        ],
+        "mode": "Deterministic rules",
+        "explanation": "The rules did not match. This does not establish that a message or link is safe.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "P24",
+      "purpose": "malformed URL",
+      "passed": true,
+      "actual": {
+        "version": "1.0.0",
+        "category": "Verify before acting",
+        "cues": [],
+        "technical": [
+          {
+            "id": "unparsed_url",
+            "detail": "A URL-like string could not be parsed. Verify it independently."
+          }
+        ],
+        "urls": [],
+        "mode": "Deterministic rules",
+        "explanation": "Use an independent, known channel before responding.",
+        "nextSteps": [
+          "Open the official app or use a contact you already know.",
+          "Do not provide passwords or one-time codes in response to a message.",
+          "Follow your institution’s reporting and urgent-response procedures."
+        ],
+        "limits": "Message cues do not prove intent or authenticity. No URL is visited, no sender is authenticated, and no trained AI model runs."
+      }
+    },
+    {
+      "id": "B01",
+      "passed": true,
+      "purpose": "Reject invalid input"
+    },
+    {
+      "id": "B02",
+      "passed": true,
+      "purpose": "Reject invalid input"
+    },
+    {
+      "id": "B03",
+      "passed": true,
+      "purpose": "Reject invalid input"
+    },
+    {
+      "id": "B04",
+      "passed": true,
+      "purpose": "Reject invalid input"
+    }
+  ]
+}

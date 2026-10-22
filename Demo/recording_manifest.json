@@ -1,0 +1,69 @@
+{
+  "captured_on": "2026-10-22",
+  "source": "Actual screenshots captured after live browser interactions with the delivered local rule demonstrator. Edited checkpoint still sequence, six seconds per scene; not continuous interaction footage.",
+  "no_generated_ui": true,
+  "audio": "none",
+  "synthetic_examples_only": true,
+  "format": "H.264 MP4, 1280x1240, 12fps",
+  "duration_seconds_approx": 54,
+  "full_decode_check": "passed",
+  "file": "cognitive-firewall-walkthrough.mp4",
+  "bytes": 198645,
+  "sha256": "fa71f1c352ddea4434fd4adfc86c94118d31e37f09e74e70dc70890fc7c484fd",
+  "scenes": [
+    {
+      "frame": "01-start.png",
+      "title": "Overview and local processing",
+      "seconds": 6,
+      "capture_sha256": "16883180bdd4d176827665b1c0f3f32bdc3e7a7439943945986cac647a64e177"
+    },
+    {
+      "frame": "02-bank-input.png",
+      "title": "Synthetic account pressure input",
+      "seconds": 6,
+      "capture_sha256": "08dd0e10aa98e72734623d9e36b6132145ff727b191be2519aeb6d263eb87f72"
+    },
+    {
+      "frame": "03-bank-result.png",
+      "title": "Rule observations and domain mismatch",
+      "seconds": 6,
+      "capture_sha256": "a37ded13c1e50564937c3a3560f2c1f26a1f5f539a52e9c4f32a7dff7fed48e4"
+    },
+    {
+      "frame": "04-verification.png",
+      "title": "Independent verification checklist",
+      "seconds": 6,
+      "capture_sha256": "79254bc907ecd396b5e0f6a47d8cdd2d90d9a07a256c0c5b32aeab5f156db469"
+    },
+    {
+      "frame": "05-legitimate-urgency.png",
+      "title": "Known limitation legitimate urgency can over-warn",
+      "seconds": 6,
+      "capture_sha256": "4e05444a57c2d3a6319bb5f3e924c83f0ef8ca85b94fbaa2cac969cfab709fed"
+    },
+    {
+      "frame": "06-routine.png",
+      "title": "No listed cues does not establish safety",
+      "seconds": 6,
+      "capture_sha256": "2f99f432658a09986d684cf2165d56bfefe71f6cc61c1dd278498c49dd93859d"
+    },
+    {
+      "frame": "07-urdu.png",
+      "title": "Limited Urdu example",
+      "seconds": 6,
+      "capture_sha256": "50d8f9d83a64962036399f600993aafc90a387088fe6572039d9e710c979cfb8"
+    },
+    {
+      "frame": "08-untrusted-instructions.png",
+      "title": "Untrusted instructions do not override rules",
+      "seconds": 6,
+      "capture_sha256": "7ae3b1ff77da62a9b85a60cdf1720fcfc802406548a8ea8e60ea074d0c69d8f2"
+    },
+    {
+      "frame": "09-inert-html.png",
+      "title": "HTML text remains inert",
+      "seconds": 6,
+      "capture_sha256": "3808ff46e716b4975fa1a9e54eaa4722857579c71936e3aecd1c5889654ef7b5"
+    }
+  ]
+}
