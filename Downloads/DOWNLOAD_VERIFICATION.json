@@ -1,0 +1,217 @@
+{
+  "checked_at_utc": "2026-10-22T09:42:32.375886+00:00",
+  "phase": "final",
+  "result": "passed",
+  "office_hyperlinks": [
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Demo/cognitive-firewall-walkthrough.mp4"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/README.md"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Presentation/Digital_Cognitive_Firewall_Refined.pptx"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/tree/main/docs"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/VALIDATION_REPORT.md"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/RESEARCH_REGISTER.md"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/SOURCE_REVIEW.md"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/TEMPLATE_LINKS.md"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/raw/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_Refined.pptx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer"
+    },
+    {
+      "file": "Digital_Cognitive_Firewall_Refined.pptx",
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/TEMPLATE_LINKS.md"
+    }
+  ],
+  "unique_office_link_checks": [
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer",
+      "bytes": 273211,
+      "sha256": "7168bbf1f49e02a19ae073f150b12f13ae3f3548968d0110e37bf5de526e72bd",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Demo/cognitive-firewall-walkthrough.mp4",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Demo/cognitive-firewall-walkthrough.mp4",
+      "bytes": 214117,
+      "sha256": "110b30bcf5d1dd119a08d57a164f498c12ceaa90b3e56732bc277a8762b72ec1",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Presentation/Digital_Cognitive_Firewall_Refined.pptx",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/Presentation/Digital_Cognitive_Firewall_Refined.pptx",
+      "bytes": 212830,
+      "sha256": "601d01e565abb7afd1970a42168d86f0ba36929a11a8be22cf7618d3b77468fb",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/README.md",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/README.md",
+      "bytes": 241297,
+      "sha256": "ad36317ffc609a517f6c79bd8ccd6af82ffd55c07eb62e76f7c697eed2437a44",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/RESEARCH_REGISTER.md",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/RESEARCH_REGISTER.md",
+      "bytes": 235356,
+      "sha256": "6d63b83c7897d8e86536c8e29a8b6d51e90df3c2a7f56c116c9838e055c80500",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/SOURCE_REVIEW.md",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/SOURCE_REVIEW.md",
+      "bytes": 246784,
+      "sha256": "896e272f24752683b899e6004a0e00e03e15b0992fb40bd33b108f42d170c125",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/TEMPLATE_LINKS.md",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/TEMPLATE_LINKS.md",
+      "bytes": 225746,
+      "sha256": "0445ae00f20c52ab5fd9916939e188080572ca0a9798bce8157ed5777bd1324a",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/VALIDATION_REPORT.md",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/blob/main/docs/VALIDATION_REPORT.md",
+      "bytes": 226588,
+      "sha256": "84c7633422557dab9a6d6ab7deb939814f041513edf4463cc5faca3ede926852",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/raw/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+      "bytes": 387953,
+      "sha256": "82892ff0e07e87d6d7532751e03e38f8a5710aac045d8226b9700485120d6f2c",
+      "content_type": "application/zip",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false,
+      "matches_local_zip": true,
+      "crc_check": true,
+      "file_count": 36,
+      "inside_template_matches_delivered": true,
+      "inside_template_has_download_link": true
+    },
+    {
+      "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/tree/main/docs",
+      "status": 200,
+      "final_url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/tree/main/docs",
+      "bytes": 224288,
+      "sha256": "2737de9c79ba56352838595e59a1fdc48c8ce54d69bd9c120654e0f6e8879063",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "authorization_sent": false,
+      "cookie_sent": false
+    }
+  ],
+  "public_zip_download": {
+    "url": "https://github.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/raw/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/javed110/digital-cognitive-firewall-pcc-2026-reviewer/refs/heads/main/Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+    "bytes": 387953,
+    "sha256": "82892ff0e07e87d6d7532751e03e38f8a5710aac045d8226b9700485120d6f2c",
+    "content_type": "application/zip",
+    "content_disposition": null,
+    "authorization_sent": false,
+    "cookie_sent": false,
+    "matches_local_zip": true,
+    "crc_check": true,
+    "file_count": 36,
+    "inside_template_matches_delivered": true,
+    "inside_template_has_download_link": true
+  },
+  "forbidden_office_links": [],
+  "errors": [],
+  "scope": "Anonymous URL availability and exact ZIP bytes. Preliminary phase precedes rebuilding the archive with the updated template. Final phase verifies the published rebuilt archive and its embedded updated template.",
+  "repository_package_checks": [
+    {
+      "repository": "javed110/digital-cognitive-firewall-pcc-2026-reviewer",
+      "path": "Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+      "git_blob_sha": "70c0876cc11dc28918f08d954fa01ab6eb6c9963",
+      "expected_blob_match": true
+    },
+    {
+      "repository": "javed110/digital-cognitive-firewall-pcc-2026-reviewer",
+      "path": "docs/Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "git_blob_sha": "f63df038bc0081bb3d01ff52d4a827a4f03b94ef",
+      "expected_blob_match": true
+    },
+    {
+      "repository": "javed110/digital-cognitive-firewall-pcc-2026",
+      "path": "Downloads/Digital_Cognitive_Firewall_Complete_Final_Package.zip",
+      "git_blob_sha": "70c0876cc11dc28918f08d954fa01ab6eb6c9963",
+      "expected_blob_match": true
+    },
+    {
+      "repository": "javed110/digital-cognitive-firewall-pcc-2026",
+      "path": "docs/Digital_Cognitive_Firewall_PCC26_Concept_Note.docx",
+      "git_blob_sha": "bee15699f81fd286ba2a9a5c9e4fcf5f9eeb0ca5",
+      "expected_blob_match": true
+    }
+  ]
+}
